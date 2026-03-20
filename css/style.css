@@ -1,22 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Amiri+Quran&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat:wght@400..700&family=Federant&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam:wght@300;400;700&family=Momo+Signature&family=Mulish:ital,wght@0,1000;1,1000&family=Noto+Nastaliq+Urdu:wght@400..700&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.looding{
-    width: 100%;
-    height: 100vh;
-    background-color: #F4B826;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+body{
+    height:100vh;
+    display:grid;
 }
-.looding-img{
- width: 300px;
-    height: auto;
-    object-fit: cover;
-      animation: landing 1.5s ease-in infinite;
+.looding {
+  width: 100%;
+  height: auto;
+  background-color: #f4b826;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.looding-img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  animation: landing 1.5s ease-in infinite;
   opacity: 1;
 }
 
@@ -56,7 +60,7 @@
   }
 }
 @media (max-width: 1024px) {
- .looding-img {
+  .looding-img {
     width: 200px;
   }
 }
@@ -64,4 +68,36 @@
   .looding-img {
     width: 100px;
   }
+}
+.restrunt-header {
+  width: 100%;
+  height: auto;
+  background-color: #f4b826;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.nav-bar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Noto Nastaliq Urdu", serif;
+}
+.imgs-menu {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.imgs-menu img {
+  width: 100%;
+  height: 100%;
 }
